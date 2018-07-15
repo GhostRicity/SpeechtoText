@@ -4,34 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SpeechRec">
+
+    tools:context=".SpeechRec"
+    tools:layout_editor_absoluteY="8dp">
 
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginRight="162dp"
-        android:text="Rec"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/microphone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="309dp"
-        android:layout_height="303dp"
-        android:layout_marginBottom="131dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="130dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginLeft="52dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="77dp"
-        android:text="TextView"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSav"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginStart="24dp"
+        android:text="Saglabat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button" />
+
+    <Button
+        android:id="@+id/buttonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="50dp"
+        android:text="Parskatit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>
